@@ -1,0 +1,10 @@
+[requires]
+nng/1.1.1@zinnion/stable
+
+[generators]
+cmake
+
+[imports]
+lib, *.dylib* -> ./lib # Copies all dylib files from packages lib folder to my local "bin" folder
+lib, *.so* -> ./lib # Copies all so files from packages lib folder to my "lib" folder
+lib, *.a* -> ./lib # Copies all so files from packages lib folder to my "lib" folder
